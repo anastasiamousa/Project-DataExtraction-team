@@ -29,5 +29,20 @@ for tr in trs:
   data = dict()
   
   for num,td in enumerate(tds): 
+    if not td.find('strong'):
+      tag = contents[num]
+      data[tag] = td.text
+      
+  _7thInfo.append(data)
+  
+for item in _7thInfo:
+  if item is not None:
+    _7thInfo.append(item)
     
-
+#Opening file
+with open('./_7thInfo.txt','a') as file:
+  for data in _7thInfo:
+    for key,val in data.items():
+      file.write(f"{key}:{val}")
+    file.write('\n')
+   
