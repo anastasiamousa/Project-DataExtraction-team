@@ -4,3 +4,10 @@
 Import requests
 from bs4 import BeautifulSoup
 
+#User agent header
+header = { 
+'User-Agent': 'Mozilla/5.0'
+}
+
+#Request 
+
