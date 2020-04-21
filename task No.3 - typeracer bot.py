@@ -9,7 +9,7 @@ import re
 from time import sleep
 
  class TRbot:
-    def __init__(self):
+    def main():
         self.driver = webdriver.Firefox()
         self.website = "https://play.typeracer.com/
 
