@@ -1,19 +1,15 @@
-<<<<<<< HEAD
- from selenium import webdriver
- from selenium.webdrive.common.keys import keys
- import time
 
- class TRbot:
-    def __init__(self):
-        self.driver = webdriver.Firefox()
-        
-=======
 from selenium import webdriver
- from selenium.webdrive.common.keys import keys
- import time
+from selenium.webdrive.common.keys import keys
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
+import sys
+import re
+from time import sleep
 
  class TRbot:
     def __init__(self):
         self.driver = webdriver.Firefox()
         self.website = "https://play.typeracer.com/
->>>>>>> 7c48559aec306739ed857de0fe02ee719a7b8b18
+
